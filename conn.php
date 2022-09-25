@@ -1,7 +1,7 @@
 <?php 
 <system.net>
 <defaultProxy>
-  <proxy  proxyaddress="http://divya18.database.windows.net" bypassonlocal="True"/>
+  <proxy  proxyaddress="divya18.database.windows.net" bypassonlocal="True"/>
 
 $servername='divya18.database.windows.net';
 $username='Divya';

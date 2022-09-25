@@ -4,7 +4,7 @@
   <proxy  proxyaddress="divya18.database.windows.net" bypassonlocal="True"/>
 
 $servername='divya18.database.windows.net';
-$username='Divya';
+$username='divya';
 $password='Devesh-2002';
 $db='bustracker';
 

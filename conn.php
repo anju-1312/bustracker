@@ -2,7 +2,7 @@
 $servername='localhost';
 $username='Divya';
 $password='Devesh-2002';
-$db='BusTracker';
+$db='bustracker';
 
 $conn=new mysqli($servername,$username,$password,$db);
 if ($conn->connect_error) {

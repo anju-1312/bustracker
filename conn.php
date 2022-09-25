@@ -1,4 +1,8 @@
 <?php 
+<system.net>
+<defaultProxy>
+  <proxy  proxyaddress="http://divya18.database.windows.net" bypassonlocal="True"/>
+
 $servername='divya18.database.windows.net';
 $username='Divya';
 $password='Devesh-2002';
@@ -13,4 +17,6 @@ if ($conn->connect_error) {
     echo "connected successfully";
     
 }
+</defaultProxy>
+</system.net>
 ?>

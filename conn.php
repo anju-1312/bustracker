@@ -13,6 +13,6 @@ if ($conn->connect_error) {
 }else{
     echo "connected successfully";
 }
-</defaultProxy>
-  </system.net>
+     </defaultProxy>
+</system.net>
 ?>

@@ -1,5 +1,5 @@
 <?php 
-$servername='divya18.database.windows.net';
+$servername=divya18.database.windows.net;
 $username='Divya';
 $password='Devesh-2002';
 $db='bustracker';

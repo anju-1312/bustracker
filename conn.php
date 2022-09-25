@@ -2,8 +2,6 @@
 <system.net>
 <defaultProxy>
   <proxy  proxyaddress="http://divya18.database.windows.net" bypassonlocal="True"/>
-</defaultProxy>
-</system.net>
 
 $servername='divya18.database.windows.net';
 $username='Divya';
@@ -20,5 +18,8 @@ else{
     echo "connected successfully";
     
 }
+</defaultProxy>
+</system.net>
+
 
 ?>

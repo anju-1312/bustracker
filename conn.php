@@ -1,4 +1,6 @@
 <?php 
+<system.net>
+    <defaultProxy enabled="false" >
 $servername='divya18.database.windows.net';
 $username='Divya';
 $password='Devesh-2002';
@@ -11,4 +13,6 @@ if ($conn->connect_error) {
 }else{
     echo "connected successfully";
 }
+</defaultProxy>
+  </system.net>
 ?>

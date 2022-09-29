@@ -7,7 +7,7 @@ $latitude=$_POST['latitude'];
 $longitude=$_POST['longitude'];
 
 
-$query="UPDATE location SET latitude='$latitude', longitude='$longitude' WHERE Bno='$Bno' AND Name='$Name'";
+$query="UPDATE [dbo].[bus] SET latitude='$latitude', longitude='$longitude' WHERE Bno='$Bno' AND Name='$Name'";
 
 $res=mysqli_query($conn,$query);
 if ($res) {

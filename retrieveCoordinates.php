@@ -5,7 +5,7 @@ $Destination=$_POST['Destination'];
 $i="not";
 
 
- $sql = "SELECT latitude,longitude FROM location where Bno='$Bno' AND Destination='$Destination' " ;
+ $sql = "SELECT latitude,longitude FROM [dbo].[bus] where Bno='$Bno' AND Destination='$Destination' " ;
 
  $exe=mysqli_query($conn,$sql);
 

@@ -9,7 +9,7 @@ $Destination=$_POST['Destination'];
 
 
 
-$query="INSERT INTO [dbo].[bus] (Bno,Name,Destination,latitude,longitude)VALUES('$Bno','$Name','$Destination','$latitude','$longitude')";
+$query="INSERT INTO [dbo].[bus] VALUES('$Bno','$Name','$Destination','$latitude','$longitude')";
 $res=mysqli_query($conn,$query);
 
 if ($res) {

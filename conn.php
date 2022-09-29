@@ -10,6 +10,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
     echo "Connected successfully";
+
     //Establishes the connection
     //$conn = sqlsrv_connect($serverName, $connectionOptions);
     //$tsql= "SELECT TOP (1000) * FROM [dbo].[bus]";

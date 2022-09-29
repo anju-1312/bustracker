@@ -5,10 +5,6 @@
         "Uid" => "divya", // update me
         "PWD" => "Devesh-2002" // update me
     );
-    
-    
-
-   // Establishes the connection
     $conn = sqlsrv_connect($serverName, $connectionOptions);
     $tsql= "SELECT TOP (1000) * FROM [dbo].[bus]";
     $getResults= sqlsrv_query($conn, $tsql);

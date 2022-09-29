@@ -15,6 +15,6 @@ echo('$Bno','$Name','$Destination','$latitude','$longitude');
 if ($res) {
 	echo "true";
 }else{
-	echo "false";
+	echo "false"; 
 }
   ?>

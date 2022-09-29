@@ -1,16 +1,19 @@
 <?php
-// PHP Data Objects(PDO) Sample Code:
-try {
-    $conn = new PDO("sqlsrv:server = tcp:divya18.database.windows.net,1433; Database = bustracker", "divya", "{your_password_here}");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e) {
-    print("Error connecting to SQL Server.");
-    die(print_r($e));
-}
-
-// SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "divya", "pwd" => "{your_password_here}", "Database" => "bustracker", "LoginTimeout" => 1000, "Encrypt" => 0, "TrustServerCertificate" =>True);
-$serverName = "tcp:divya18.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
+    $serverName = "divya18.database.windows.net"; // update me
+    $connectionOptions = array(
+        "Database" => "bustracker", // update me
+        "Uid" => "divya", // update me
+        "PWD" => "Devesh-2002" // update me
+    );
+    //Establishes the connection
+    $conn = sqlsrv_connect($serverName, $connectionOptions);
+    $tsql= "SELECT TOP (1000) * FROM [dbo].[bus]";
+    $getResults= sqlsrv_query($conn, $tsql);
+    echo ("Reading data from table" . PHP_EOL);
+    if ($getResults == FALSE)
+        echo (sqlsrv_errors());
+    while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
+     echo ($row['Name'] . " " . $row['Bno'] . PHP_EOL);
+    }
+    sqlsrv_free_stmt($getResults);
 ?>

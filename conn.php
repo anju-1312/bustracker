@@ -6,7 +6,7 @@
         "PWD" => "Devesh-2002" // update me
     );
     //Establishes the connection
-    $conn = sqlsrv_connect($serverName, $connectionOptions;Trusted_Connection=False;Encrypt=True;);
+    $conn = sqlsrv_connect($serverName, $connectionOptions);
     $tsql= "SELECT TOP (1000) * FROM [dbo].[bus]";
     $getResults= sqlsrv_query($conn, $tsql);
     echo ("Reading data from table" . PHP_EOL);

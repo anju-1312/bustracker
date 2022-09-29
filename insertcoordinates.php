@@ -10,6 +10,8 @@ $Destination=$_POST['Destination'];
 $query="INSERT INTO [dbo].[bus] VALUES('$Bno','$Name','$Destination','$latitude','$longitude')";
 $res=mysqli_query($conn,$query);
 
+echo('$Bno','$Name','$Destination','$latitude','$longitude')
+
 if ($res) {
 	echo "true";
 }else{

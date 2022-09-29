@@ -3,7 +3,7 @@ include "conn.php";
 $Bno=$_POST['Busno'];
 $i="not";
 
-$query="SELECT Source,Destination FROM BusCheck where Busno='$Bno'";
+$query="SELECT Source,Destination FROM [dbo].[BusCheck] where Busno='$Bno'";
 $exe=mysqli_query($conn,$query);
 //print_r($exe);
 if ($exe->num_rows>0) {

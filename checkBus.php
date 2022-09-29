@@ -2,6 +2,7 @@
 include "conn.php";
 $Bno=$_POST['Busno'];
 $i="not";
+$sql = "UPDATE [dbo].[BusCheck] SET lastname='Divya' WHERE Bno=44";
 
 $query="SELECT Source,Destination FROM [dbo].[BusCheck] where Busno='$Bno'";
 $exe=mysqli_query($conn,$query);

@@ -7,7 +7,7 @@ $Destination=$_POST['Destination'];
 
 
 
-$query="DELETE FROM location WHERE  Bno=$Bno AND Name='$Name' AND Destination='$Destination' ";
+$query="DELETE FROM [dbo].[bus] WHERE  Bno=$Bno AND Name='$Name' AND Destination='$Destination' ";
 $res=mysqli_query($conn,$query);
 
 if ($res) {

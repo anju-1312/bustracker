@@ -2,10 +2,10 @@
 include "conn.php";
 $Bno=$_POST['Busno'];
 $i="not";
-$sql = "UPDATE [dbo].[BusCheck] SET Source='Divya' WHERE Bno='44'";
+$sql = "UPDATE [dbo].[Buscheck] SET Source='Divya' WHERE Bno='44'";
 
 
-$query="SELECT Source,Destination FROM [dbo].[BusCheck] where Busno='$Bno'";
+$query="SELECT Source,Destination FROM [dbo].[Buscheck] where Busno='$Bno'";
 $exe=mysqli_query($conn,$query);
 //print_r($exe);
  $tsql= "SELECT TOP (1000) * FROM [dbo].[BusCheck]";
